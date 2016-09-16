@@ -24,7 +24,7 @@ int segF = A2; //Display pin 11
 int segG = A3; //Display pin 15
 int dp = 2;
 
-void setup() {  
+void setup() {
   pinMode(segA, OUTPUT);
   pinMode(segB, OUTPUT);
   pinMode(segC, OUTPUT);
