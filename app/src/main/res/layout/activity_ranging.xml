@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/logText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/rangingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/dist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/rangingText"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:textSize="120sp" />
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/dist"
+        android:layout_below="@id/dist"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="15dp"
+        android:textSize="30sp"
+        android:textColor="#fff" />
+
+    <ToggleButton
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/toggle_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/check"
+        android:adjustViewBounds="true"
+        android:textOn=""
+        android:textOff=""
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/unit"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
